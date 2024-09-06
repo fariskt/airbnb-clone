@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.logo {
+  width: 100px;
+}
+.logo-container {
+  width: 250px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 100px;
+}
+.nav-last a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+.center-btn button {
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 20px;
+  color: grey;
+}
+.center-btn button:focus {
+  font-weight: 600;
+  color: black;
+}
+
+.center-btn button:hover,
+.nav-last p:hover {
+  background-color: rgb(245, 245, 245);
+}
+.nav-last {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.nav-last p,
+.nav-last button {
+  border-radius: 30px;
+  padding: 10px 10px;
+}
+button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.user-btn {
+  border: 1px solid rgb(201, 198, 198);
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+.user-btn:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 1px 2px 8px 0px;
+}
+#user-icon {
+  padding: 5px;
+  background-color: rgb(144, 135, 135);
+  border-radius: 50%;
+  color: white;
+}
+.search-bar form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(185, 181, 181);
+  width: 60%;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 7px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 2px -3px;
+  margin: auto;
+}
+form input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+form div {
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+form div:hover {
+  background-color: rgb(235, 235, 235);
+}
+form p {
+  margin: 0;
+  font-size: 14px;
+}
+.guest {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+.search-icon {
+  margin: 8px 5px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 0, 89);
+  border-radius: 100%;
+  color: white;
+  padding: 15px 17px;
+  text-align: center;
+}
+.search-icon:hover {
+  background-color: rgb(255, 0, 89);
+}
+.hr-line {
+  border-top: 1px solid rgb(206, 206, 206);
+  height: 30px;
+
+}
+.icons-collection {
+  position: absolute;
+  display: flex;
+  width: 95%;
+  margin: 20px auto;
+  justify-content: center;
+  column-gap: 40px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.icons-collection img {
+  height: 25px;
+  opacity: 0.8;
+}
+.icons-collection div:hover,
+.icons-collection div p:hover,
+.icons-collection img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.icons-collection div:hover {
+  color: black;
+  border-bottom: 3px solid rgb(197, 197, 197);
+}
+
+.icons-collection div p {
+  font-size: 13px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #646262;
+  font-weight: 500;
+}
+.forward-btn {
+  position: absolute;
+  height: 35px;
+  border: 1px solid rgb(201, 201, 201);
+  margin-top: 5px;
+  padding-top: 5px;
+  text-align: center;
+  transition: 0.1s;
+  width: 35px;
+  border-radius: 50%;
+}
+.forward-btn:hover {
+  transform: scale(102%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.filters {
+  display: flex;
+  margin-left: 15px;
+  padding: 0 8px;
+  cursor: pointer;
+  text-align: center;
+  column-gap: 10px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 10px;
+  flex-direction: row;
+}
+.filters p {
+  text-align: center;
+  padding-top: 10px;
+}
+.taxes {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid rgb(189, 189, 189);
+  text-align: center;
+  padding: 10px;
+}
+
+.taxes .display-tax {
+  font-size: 14px;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 90%;
+  row-gap: 30px;
+  column-gap: 10px;
+  justify-content: center;
+  margin: 120px auto;
+}
+.collections img {
+  height: 300px;
+  object-fit: cover;
+  width: 320px;
+  border-radius: 12px;
+}
+.collections div p {
+  margin: 5px;
+}
+.collections .card p:first-of-type,
+.card .open-close {
+  font-weight: 600;
+}
+.card .author-name {
+  color: grey;
+}
+.share-item {
+  position: relative;
+  border-radius: 100%;
+  background-color: #cecece;
+  margin-right: 30px;
+  float: right;
+  padding: 5px 10px;
+  cursor: pointer;
+  bottom: 290px;
+}
+.share-item:hover {
+  background-color: #fff;
+  transform: scale(102%);
+}
